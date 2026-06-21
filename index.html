@@ -11,16 +11,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #E8F0DC;
-    --surface: #D7E6C4;
-    --surface-active: #C2D9A8;
+    --bg: #EFEFEF;          /* Platinum */
+    --surface: #F6F8F0;     /* platinum with a faint lime wash */
+    --surface-active: #E7F2CC;
     --card: #ffffff;
-    --border: #BBD09F;
-    --text-primary: #283A22;
-    --text-secondary: #4C5C40;
-    --text-tertiary: #75895F;
-    --accent: #4F6B3E;
-    --accent-text: #F3F7EC;
+    --border: #DDE2D4;
+    --text-primary: #263D42;  /* Jet Black */
+    --text-secondary: #4C5F64;
+    --text-tertiary: #87938A;
+    --accent: #7FB800;       /* Lime Moss */
+    --accent-dark: #6A9A00;
+    --accent-text: #1B2A2E;  /* Jet Black, for text on lime */
     --radius-md: 8px;
     --radius-lg: 14px;
   }
@@ -28,7 +29,7 @@
   body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(180deg, #DCEBC8 0%, var(--bg) 40%);
+    background: linear-gradient(180deg, #E7EFD8 0%, var(--bg) 32%);
     background-attachment: fixed;
     color: var(--text-primary);
     line-height: 1.6;
@@ -97,12 +98,12 @@
     background: var(--accent);
     color: var(--accent-text);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: inherit;
     cursor: pointer;
     white-space: nowrap;
   }
-  button.btn-primary:hover { opacity: 0.9; }
+  button.btn-primary:hover { background: var(--accent-dark); }
   button.btn-primary:disabled { opacity: 0.6; cursor: default; }
   .form-note {
     font-size: 13px;
@@ -122,7 +123,19 @@
     padding: 1.25rem 1rem;
     text-align: center;
   }
-  .step-card .emoji { font-size: 22px; }
+  .step-card .step-num {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--accent-text);
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .step-card p.title {
     font-size: 14px;
     font-weight: 500;
@@ -180,7 +193,6 @@
     align-items: flex-start;
     gap: 14px;
   }
-  .panel .panel-icon { font-size: 20px; margin-top: 2px; flex-shrink: 0; }
   .panel p.title {
     font-size: 14px;
     font-weight: 500;
@@ -229,17 +241,17 @@
 
   <div class="steps">
     <div class="step-card">
-      <div class="emoji">📷</div>
+      <div class="step-num">1</div>
       <p class="title">Scan your pass</p>
       <p class="desc">Point your camera at your boarding pass, paper or digital.</p>
     </div>
     <div class="step-card">
-      <div class="emoji">🗺️</div>
+      <div class="step-num">2</div>
       <p class="title">Get your timeline</p>
       <p class="desc">Built before takeoff, while you've still got signal.</p>
     </div>
     <div class="step-card">
-      <div class="emoji">✈️</div>
+      <div class="step-num">3</div>
       <p class="title">Follow along, airborne</p>
       <p class="desc">Works the whole flight. Zero connectivity required.</p>
     </div>
@@ -252,7 +264,7 @@
       <figcaption>Scan your pass</figcaption>
     </figure>
     <figure>
-      <img src="images/02-notification.png" alt="Lockscreen notification telling you to look left for Mount Fuji">
+      <img src="images/02-notification.png" alt="Lockscreen notification: look for a square dark spot in the Northeast over the Powder River Basin">
       <figcaption>Look up, on cue</figcaption>
     </figure>
     <figure>
@@ -266,7 +278,6 @@
   </div>
 
   <div class="panel">
-    <div class="panel-icon">🌿</div>
     <div>
       <p class="title">Built for looking up, not down</p>
       <p class="desc">Flying is one of the rare stretches of time with nowhere to be and nothing demanding your attention. A short glance, then the phone goes back in the pocket. Not another screen to stare at for three hours.</p>
@@ -274,7 +285,6 @@
   </div>
 
   <div class="panel" style="margin-bottom: 2.5rem;">
-    <div class="panel-icon">📡</div>
     <div>
       <p class="title">Why offline matters</p>
       <p class="desc">In-flight WiFi is slow, spotty, or costs extra, when it works at all. Everything here is ready before you board, so the plane's connection is never part of the plan.</p>
