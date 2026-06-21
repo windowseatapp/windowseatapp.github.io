@@ -1,5 +1,7 @@
 .claude/
+prototype/
 appfiles_extracted/
 *.zip
 .DS_Store
 PROJECT_BRIEF.md
+_lp_*.png
