@@ -11,17 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #EFEFEF;          /* Platinum */
-    --surface: #F6F8F0;     /* platinum with a faint lime wash */
-    --surface-active: #E7F2CC;
-    --card: #ffffff;
-    --border: #DDE2D4;
-    --text-primary: #263D42;  /* Jet Black */
-    --text-secondary: #4C5F64;
-    --text-tertiary: #87938A;
-    --accent: #7FB800;       /* Lime Moss */
-    --accent-dark: #6A9A00;
-    --accent-text: #1B2A2E;  /* Jet Black, for text on lime */
+    --bg: #15241B;            /* deep forest green */
+    --surface: #25372B;       /* elevated dark green */
+    --surface-active: #2E4334;
+    --card: #243A2C;
+    --border: rgba(233,231,218,0.10);
+    --text-primary: #ECE7D6;  /* cream */
+    --text-secondary: #B4B49C;
+    --text-tertiary: #8A9072;
+    --accent: #8BA875;        /* bright sage */
+    --accent-dark: #7A976A;
+    --accent-text: #18271C;   /* dark green text on sage */
+    --sand: #D3C2A0;          /* light bamboo accent */
     --radius-md: 8px;
     --radius-lg: 14px;
   }
@@ -29,7 +30,7 @@
   body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(180deg, #E7EFD8 0%, var(--bg) 32%);
+    background: linear-gradient(180deg, #294232 0%, var(--bg) 34%);
     background-attachment: fixed;
     color: var(--text-primary);
     line-height: 1.6;
@@ -86,6 +87,7 @@
     font-family: inherit;
     color: var(--text-primary);
   }
+  input[type="email"]::placeholder { color: var(--text-tertiary); }
   input[type="email"]:focus {
     outline: none;
     box-shadow: 0 0 0 2px var(--accent);
@@ -149,7 +151,7 @@
   .section-label {
     font-size: 13px;
     font-weight: 600;
-    color: var(--text-tertiary);
+    color: var(--sand);
     text-transform: uppercase;
     letter-spacing: 0.04em;
     text-align: center;
@@ -290,23 +292,23 @@
     </div>
   </div>
 
-  <p class="section-label">App concept</p>
+  <p class="section-label">Inside the app</p>
   <div class="gallery">
     <figure>
-      <img src="images/01-scan.png" alt="Scan your boarding pass screen">
-      <figcaption>Scan your pass</figcaption>
+      <img src="images/app-scan.png" alt="Add your flight screen: search for a digital boarding pass or scan a paper one">
+      <figcaption>Add your flight</figcaption>
     </figure>
     <figure>
-      <img src="images/02-notification.png" alt="Lockscreen notification: look for a square dark spot in the Northeast over the Powder River Basin">
-      <figcaption>Look up, on cue</figcaption>
-    </figure>
-    <figure>
-      <img src="images/03-facts.png" alt="Detail screen with facts about the Powder River Basin">
-      <figcaption>Tap for the story</figcaption>
-    </figure>
-    <figure>
-      <img src="images/04-timeline.png" alt="Full flight timeline showing all upcoming landmarks">
+      <img src="images/app-timeline.png" alt="Flight timeline from SFO to JFK with landmarks and a plane position marker">
       <figcaption>Your whole flight, mapped</figcaption>
+    </figure>
+    <figure>
+      <img src="images/app-glance.png" alt="Glance screen: a single calm card over clouds telling you to look out for the Powder River Basin">
+      <figcaption>Glance, then look out</figcaption>
+    </figure>
+    <figure>
+      <img src="images/app-story.png" alt="Landmark detail screen with a photo of the Powder River Basin and a longer story">
+      <figcaption>Tap for the story</figcaption>
     </figure>
   </div>
 

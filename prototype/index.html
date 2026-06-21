@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Window Seat — app UI</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *{box-sizing:border-box;}
+  body{margin:0; background:#1B2A2E; color:#EFEFEF;
+    font-family:'Inter',-apple-system,'Segoe UI',sans-serif; padding:40px 24px 60px;}
+  header{text-align:center; max-width:760px; margin:0 auto 38px;}
+  header h1{font-size:24px; font-weight:700; margin:0 0 6px; letter-spacing:-0.02em;}
+  header h1 span{color:#7FB800;}
+  header p{font-size:14.5px; color:#A9B3AE; margin:0; line-height:1.5;}
+  .rail{display:flex; gap:34px; justify-content:center; flex-wrap:wrap; align-items:flex-start;}
+  .device{display:flex; flex-direction:column; align-items:center; gap:14px;}
+  .bezel{
+    width:406px; height:860px; border-radius:52px; padding:8px;
+    background:#0E1719; box-shadow:0 30px 70px rgba(0,0,0,.45), inset 0 0 0 2px #2A3A3E;
+  }
+  .bezel iframe{
+    width:390px; height:844px; border:none; border-radius:44px; display:block; background:#EFEFEF;
+  }
+  .label{font-size:13px; font-weight:600; color:#C7D0CB; letter-spacing:.02em;}
+  .num{color:#7FB800;}
+</style></head>
+<body>
+  <header>
+    <h1><span>Window Seat</span> — app UI mockup</h1>
+    <p>Light prototype, no live functionality. The Powder River Basin example runs through all four screens. Open any screen on its own (files 1–4) to take a clean screenshot.</p>
+  </header>
+
+  <div class="rail">
+    <div class="device">
+      <div class="bezel"><iframe src="1-add-flight.html" title="Add flight"></iframe></div>
+      <div class="label"><span class="num">1</span> &nbsp;Add your flight</div>
+    </div>
+    <div class="device">
+      <div class="bezel"><iframe src="2-timeline.html" title="Timeline"></iframe></div>
+      <div class="label"><span class="num">2</span> &nbsp;Pre-flight timeline</div>
+    </div>
+    <div class="device">
+      <div class="bezel"><iframe src="3-landmark.html" title="Landmark"></iframe></div>
+      <div class="label"><span class="num">3</span> &nbsp;Landmark detail</div>
+    </div>
+    <div class="device">
+      <div class="bezel"><iframe src="4-inflight.html" title="In flight"></iframe></div>
+      <div class="label"><span class="num">4</span> &nbsp;In-flight glance</div>
+    </div>
+  </div>
+</body></html>
