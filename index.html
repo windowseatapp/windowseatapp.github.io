@@ -11,18 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #EFE6D3;            /* light tan */
-    --surface: #FAF5EA;       /* warm near-white card */
-    --surface-active: #F0E7D2;
+    --bg: #E8EFF8;            /* light cobalt-tinted background */
+    --surface: #F4F7FC;       /* very light blue-white */
+    --surface-active: #E2EAF4;
     --card: #FFFFFF;
-    --border: #DED2BB;
-    --text-primary: #3E3326;  /* dark brown */
-    --text-secondary: #6B5C47;
-    --text-tertiary: #9C8E76;
-    --accent: #7A5A3C;        /* warm brown */
-    --accent-dark: #654A30;
-    --accent-text: #F7F1E5;   /* cream on brown */
-    --sand: #C9B391;          /* mid tan accent */
+    --border: #C4D2E8;
+    --text-primary: #1A2E4A;  /* deep navy */
+    --text-secondary: #4A6280;
+    --text-tertiary: #7A90AA;
+    --accent: #1B5099;        /* cobalt from the app */
+    --accent-dark: #14396E;
+    --accent-text: #EAF1F6;   /* light blue on cobalt */
+    --sand: #A0B8D0;          /* muted steel blue */
     --radius-md: 8px;
     --radius-lg: 14px;
   }
@@ -30,7 +30,7 @@
   body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(180deg, #F5EEDD 0%, var(--bg) 34%);
+    background: linear-gradient(180deg, #D8E4F2 0%, var(--bg) 34%);
     background-attachment: fixed;
     color: var(--text-primary);
     line-height: 1.6;
@@ -203,6 +203,9 @@
     border-radius: var(--radius-lg);
     padding: 14px;
   }
+  .gallery figure.wide {
+    grid-column: span 2;
+  }
   .gallery img {
     width: 100%;
     height: auto;
@@ -295,20 +298,32 @@
   <p class="section-label">Inside the app</p>
   <div class="gallery">
     <figure>
-      <img src="images/app-scan.png" alt="Add your flight screen: search for a digital boarding pass or scan a paper one">
+      <img src="images/ss-scan.png" alt="Add your flight screen with two options: find digital boarding pass or scan paper">
       <figcaption>Add your flight</figcaption>
     </figure>
     <figure>
-      <img src="images/app-timeline.png" alt="Flight timeline from SFO to JFK with landmarks and a plane position marker">
+      <img src="images/ss-timeline.png" alt="Flight timeline from SFO to JFK showing landmarks with a plane position marker at Powder River Basin">
       <figcaption>Your whole flight, mapped</figcaption>
     </figure>
+    <figure class="wide">
+      <img src="images/ss-glance-ls-lookout.png" alt="Landscape glance mode: Look Out card for Powder River Basin on the left, flight progress bar and time on the right">
+      <figcaption>Flip it sideways — Glance goes landscape</figcaption>
+    </figure>
     <figure>
-      <img src="images/app-glance.png" alt="Glance screen: a single calm card over clouds telling you to look out for the Powder River Basin">
+      <img src="images/ss-glance.png" alt="Portrait glance screen: glass card showing Powder River Basin with time below">
       <figcaption>Glance, then look out</figcaption>
     </figure>
     <figure>
-      <img src="images/app-story.png" alt="Landmark detail screen with a photo of the Powder River Basin and a longer story">
+      <img src="images/ss-story.png" alt="Landmark detail screen with a photo of the Powder River Basin coal mine and a long-form story">
       <figcaption>Tap for the story</figcaption>
+    </figure>
+    <figure class="wide">
+      <img src="images/ss-glance-ls-otherside.png" alt="Landscape glance mode: Other Side card for Great Salt Lake, with progress bar and 9:08 PM">
+      <figcaption>Other side of the plane? It tells you that too.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/ss-settings.png" alt="Settings screen showing Blue Sky and Forest Green themes, plus Custom background option">
+      <figcaption>Pick your theme</figcaption>
     </figure>
   </div>
 
